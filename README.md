@@ -10,110 +10,110 @@ NRP: 0511740000139
 
 ## DB Connect
 
-![picture](img\db_connect.JPG)
+![picture](/img/db_connect.JPG)
 
 ### Buat koneksi SQLite
 
-![picture](img\sqlite_conf.JPG)
+![picture](/img/sqlite_conf.JPG)
 
 ### Select tabel
 
-![picture](img\select_tabel.JPG)
+![picture](/img/select_tabel.JPG)
 
 ### Baca tabel
 
-![picture](img\db_reader.JPG)
+![picture](/img/db_reader.JPG)
 
 ### Optional: konfigurasi koneksi
 
-![picture](img\auth_conf.JPG)
+![picture](/img/auth_conf.JPG)
 
 Gunakan credentials configuration untuk menset user dan password koneksi. Node ini akan menghasilkan variabel yang dapat digunakan untuk credential suatu koneksi.
 
 
 ## DB Processing
 
-![picture](img\ex_1_2.JPG)
+![picture](/img/ex_1_2.JPG)
 
 ### Join tabel dan menghilangkan kolom
 
-![picture](img\join.JPG)
+![picture](/img/join.JPG)
 
 Join dengan kolom serial no dengan node DB Joiner dan filter kolom puma* dan pwgtp* dengan node Column filter denagn regex ^((?!puma|pwgtp).*)$
 
-![picture](img\join_conf.JPG)
-![picture](img\regex.JPG)
+![picture](/img/join_conf.JPG)
+![picture](/img/regex.JPG)
 
 Hasilnya sebagai berikut:
 
-![picture](img\join_res.JPG)
+![picture](/img/join_res.JPG)
 
 ### Filter row
 
-![picture](img\row_filter.JPG)
+![picture](/img/row_filter.JPG)
 
 Filter row dengan cow is null dengan node DB row filter dengan konfigurasi berikut:
 
-![picture](img\cow_null.JPG)
+![picture](/img/cow_null.JPG)
 
 Hasilnya adalah sebagai berikut:
 
-![picture](img\filter_res.JPG)
+![picture](/img/filter_res.JPG)
 
 ### Hitung AVG agep berdasarkan sex
 
-![picture](img\avg.JPG)
+![picture](/img/avg.JPG)
 
 Gunakan node DB GroupBy dan setting sex sebagai group,agep sebagai kolom aggregasi dan AVG sebagai metode aggregasi.
 
-![picture](img\group1.JPG)
-![picture](img\group2.JPG)
+![picture](/img/group1.JPG)
+![picture](/img/group2.JPG)
 
 Hasil:
 
-![picture](img\group_res.JPG)
+![picture](/img/group_res.JPG)
 
 ### Optional: konfigurasi koneksi
 
 Gunakan node-node berikut:
 
-![picture](img\sort.JPG)
+![picture](/img/sort.JPG)
 
 Sorting dengan DB Sorter dan batasi query menjadi 10 dengan DB Query.
 
 Hasil:
 
-![picture](img\sort_res.JPG)
+![picture](/img/sort_res.JPG)
 
 ## DB Modelling
 
-![picture](img\modelling.JPG)
+![picture](/img/modelling.JPG)
 
 Tambahkan Decison Tree Learner dan Predictor ke workflow yang sudah ada.
 
 Berikut adalah konfigurasi yang digunakan:
 
-![picture](img\modelling_learn.JPG)
+![picture](/img/modelling_learn.JPG)
 
 berikut adalah hasilnya:
 
-![picture](img\modelling_res.JPG)
+![picture](/img/modelling_res.JPG)
 
 ## DB Write
 
 Gunakan node DB Write untuk membuat tabel baru dan node DB Update untuk menambahkan/ mengedit data pada suatu tabel
 
-![picture](img\write.JPG)
+![picture](/img/write.JPG)
 
 Hasil update:
 
-![picture](img\write_res.JPG)
+![picture](/img/write_res.JPG)
 
 Hasil backup:
-![picture](img\backup.JPG)
+![picture](/img/backup.JPG)
 
 Hasil model:
-![picture](img\write_model.JPG)
+![picture](/img/write_model.JPG)
 
 
 # Exercise 2
@@ -150,14 +150,14 @@ CSV reader akan membaca isi csv, kemudian table creator akan membuat table sesua
 
 Hasilnya adalah sebagai berikut:
 
-![picture](img/ssp_knime_res.JPG)
+![picture](/img/ssp_knime_res.JPG)
 
 Di DBeaver:
 
-![picture](img/139_ssh_res.JPG)
-![picture](img/139_ssp_res.JPG)
-![picture](img/139_ssh_count.JPG)
-![picture](img/139_ssp_count.JPG)
+![picture](/img/139_ssh_res.JPG)
+![picture](/img/139_ssp_res.JPG)
+![picture](/img/139_ssh_count.JPG)
+![picture](/img/139_ssp_count.JPG)
 
 ## Hive Modelling
 
